@@ -1,0 +1,62 @@
+[
+  {
+    "CargoTrackingId": 1,
+    "CargoStatus": "yolda",
+    "CargoId": 1,
+    "SendingAddress": "slkrghşslkjgh",
+    "ReceivingAddress": "slngslkjşhflsk",
+    "UserId": 1,
+    "Name": "burcu",
+    "LastName": "arslan",
+    "PhoneNumber": "5442276917",
+    "Email": "burcuarslln@gmail.com"
+  },
+  {
+    "CargoTrackingId": 1,
+    "CargoStatus": "ürün teslim edildi",
+    "CargoId": 2,
+    "SendingAddress": "slkrghşslkjgh",
+    "ReceivingAddress": "slngslkjşhflsk",
+    "UserId": 2,
+    "Name": "emrecan",
+    "LastName": "arslan",
+    "PhoneNumber": "5442276917",
+    "Email": "burcuarslln@gmail.com"
+  },
+  {
+    "CargoTrackingId": 7,
+    "CargoStatus": "rhearh",
+    "CargoId": 0,
+    "SendingAddress": "etrhaerh",
+    "ReceivingAddress": "earhaerh",
+    "UserId": 7,
+    "Name": "kdjdghsjl",
+    "LastName": "kjsdhfsjkh",
+    "PhoneNumber": "46575",
+    "Email": "fgdrbhae"
+  },
+  {
+    "CargoTrackingId": 8,
+    "CargoStatus": "gfdgag",
+    "CargoId": 0,
+    "SendingAddress": "sdlkg",
+    "ReceivingAddress": "dfgd",
+    "UserId": 8,
+    "Name": "grdsrg",
+    "LastName": "dgtag",
+    "PhoneNumber": "654",
+    "Email": "asdgdg"
+  },
+  {
+    "CargoTrackingId": 19,
+    "CargoStatus": "aergear",
+    "CargoId": 0,
+    "SendingAddress": "ergerg",
+    "ReceivingAddress": "reagaer",
+    "UserId": 19,
+    "Name": "lsdhşkglsk",
+    "LastName": "rpaeogjlrg",
+    "PhoneNumber": "87965",
+    "Email": "gerger"
+  }
+]

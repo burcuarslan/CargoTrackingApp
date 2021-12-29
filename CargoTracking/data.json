@@ -1,0 +1,41 @@
+[
+  {
+    "CargoTrackingId": 1,
+    "CargoStatus": "yolda",
+    "CargoId": 1,
+    "SendingAddress": "slkrghşslkjgh",
+    "ReceivingAddress": "slngslkjşhflsk",
+    "UserId": 1,
+    "Name": "burcu",
+    "LastName": "arslan",
+    "PhoneNumber": "5442276917",
+    "Email": "burcuarslln@gmail.com",
+    "Password": "12345"
+  },
+  {
+    "CargoTrackingId": 1,
+    "CargoStatus": "ürün teslim edildi",
+    "CargoId": 2,
+    "SendingAddress": "slkrghşslkjgh",
+    "ReceivingAddress": "slngslkjşhflsk",
+    "UserId": 2,
+    "Name": "emrecan",
+    "LastName": "arslan",
+    "PhoneNumber": "5442276917",
+    "Email": "burcuarslln@gmail.com",
+    "Password": "12345"
+  },
+  {
+    "CargoTrackingId": 9,
+    "CargoStatus": "h",
+    "CargoId": 0,
+    "SendingAddress": "f",
+    "ReceivingAddress": "g",
+    "UserId": 9,
+    "Name": "a",
+    "LastName": "b",
+    "PhoneNumber": "c",
+    "Email": "d",
+    "Password": "e"
+  }
+]
