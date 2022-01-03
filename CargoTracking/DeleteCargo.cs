@@ -1,5 +1,4 @@
 ﻿using CargoTrackingApp.Business.Concrete;
-using CargoTrackingApp.DataAccess.Abstract;
 using CargoTrackingApp.DataAccess.Concrete;
 using System;
 using System.Collections.Generic;
@@ -13,23 +12,18 @@ using System.Windows.Forms;
 
 namespace CargoTracking
 {
-    public partial class Employee : Form
+    public partial class DeleteCargo : Form
     {
-        //CargoTrackingManager _manager;
-        public Employee()
+        CargoTrackingManager _manager;
+        public DeleteCargo()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           // _manager = new CargoTrackingManager(new InMemoryCargoTracking());
-            (new AddCargo()).Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            (new DeleteCargo()).Show();
+            _manager = new CargoTrackingManager(new InMemoryCargoTracking());
+            _manager.Delete(Convert.ToInt32(textBox1.Text));
         }
     }
 }

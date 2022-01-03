@@ -1,7 +1,7 @@
 ﻿
 namespace CargoTracking
 {
-    partial class CargoForm
+    partial class AddCargo
     {
         /// <summary>
         /// Required designer variable.

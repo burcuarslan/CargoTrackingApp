@@ -11,7 +11,7 @@ namespace CargoTrackingApp.DataAccess.Abstract
     {
         List<Tracking> GetAll();
         void Add(Tracking cargoT);
-        void Delete(Tracking cargoT);
+        void Delete(int cargoId);
         void Update(Tracking cargoT);
         List<Tracking> getById(int id);
     }

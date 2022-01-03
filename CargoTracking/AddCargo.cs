@@ -14,11 +14,11 @@ using System.Windows.Forms;
 
 namespace CargoTracking
 {
-    public partial class CargoForm :Form
+    public partial class AddCargo :Form
     {
         CargoTrackingManager _manager;
 
-        public CargoForm()
+        public AddCargo()
         {
             InitializeComponent();
         }

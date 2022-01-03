@@ -41,7 +41,6 @@ C:\Users\burcu\Source\Repos\CargoTracking\CargoTracking\obj\Debug\CargoTracking.
 C:\Users\burcu\Source\Repos\CargoTracking\CargoTracking\obj\Debug\CargoTrackingApp.csproj.AssemblyReference.cache
 C:\Users\burcu\Source\Repos\CargoTracking\CargoTracking\obj\Debug\CargoTracking.Cargo.resources
 C:\CargoTracking-main\CargoTracking-main\CargoTracking\obj\Debug\CargoTrackingApp.Form1.resources
-C:\CargoTracking-main\CargoTracking-main\CargoTracking\obj\Debug\CargoTracking.CargoForm.resources
 C:\CargoTracking-main\CargoTracking-main\CargoTracking\obj\Debug\CargoTracking.Properties.Resources.resources
 C:\CargoTracking-main\CargoTracking-main\CargoTracking\obj\Debug\CargoTrackingApp.csproj.GenerateResource.cache
 C:\CargoTracking-main\CargoTracking-main\CargoTracking\obj\Debug\CargoTrackingApp.csproj.CoreCompileInputs.cache
@@ -81,3 +80,5 @@ C:\CargoTracking-main\CargoTracking-main\CargoTracking\obj\Debug\CargoTracking.e
 C:\CargoTracking-main\CargoTracking-main\CargoTracking\obj\Debug\CargoTracking.pdb
 C:\CargoTracking-main\CargoTracking-main\CargoTracking\obj\Debug\CargoTracking.Employee.resources
 C:\CargoTracking-main\CargoTracking-main\CargoTracking\obj\Debug\CargoTrackingApp.csproj.AssemblyReference.cache
+C:\CargoTracking-main\CargoTracking-main\CargoTracking\obj\Debug\CargoTracking.AddCargo.resources
+C:\CargoTracking-main\CargoTracking-main\CargoTracking\obj\Debug\CargoTracking.DeleteCargo.resources

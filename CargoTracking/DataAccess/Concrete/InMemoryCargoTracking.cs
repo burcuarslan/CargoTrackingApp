@@ -7,25 +7,35 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
+using System.Text.RegularExpressions;
 
 namespace CargoTrackingApp.DataAccess.Concrete
 {
     public class InMemoryCargoTracking : ICargoTrackingDal
     {
         List<Tracking> _cargos;
-        IList<Tracking> _cargos2;
+        public IList<Tracking> _cargos2;
         public Object b;
+        public Object c;
+        public string[] jsonParts;
         public InMemoryCargoTracking()
         {
-            String a = File.ReadAllText(@"C:\CargoTracking-main\CargoTracking-main\CargoTracking\data2.json");
-             b=JsonConvert.DeserializeObject(a);
+            string a = File.ReadAllText(@"C:\CargoTracking-main\CargoTracking-main\CargoTracking\data2.json");
+            // b=JsonConvert.DeserializeObject(a);
+            // var model = JsonConvert.DeserializeObject<Tracking>(a);
+
+            jsonParts = Regex.Split(a.Replace("[", "").Replace("]", ""), "},{");
+
+            _cargos = jsonParts.ToList<Tracking>();
+
+
             //string c = b.ToString();
             //string[] d = c.Split(',');
-           
+
             _cargos = new List<Tracking>
             {
                 new Tracking{ UserId=1, Name="burcu", LastName="arslan", PhoneNumber="5442276917", Email="burcuarslln@gmail.com", CargoId=1, SendingAddress="slkrghşslkjgh", ReceivingAddress="slngslkjşhflsk",CargoTrackingId=1,CargoStatus="yolda" },
-                //new Tracking{ UserId=2, Name="emrecan", LastName="arslan", PhoneNumber="5442276917", Email="burcuarslln@gmail.com", CargoId=2, SendingAddress="slkrghşslkjgh", ReceivingAddress="slngslkjşhflsk",CargoTrackingId=1,CargoStatus="ürün teslim edildi" }
+                //new Tracking{ UserId=2, Name="zeynep", LastName="arslan", PhoneNumber="5442276917", Email="burcuarslln@gmail.com", CargoId=2, SendingAddress="slkrghşslkjgh", ReceivingAddress="slngslkjşhflsk",CargoTrackingId=2,CargoStatus="ürün teslim edildi" }
 
             };
             //string json = JsonConvert.SerializeObject(_cargos.ToArray());
@@ -55,10 +65,10 @@ namespace CargoTrackingApp.DataAccess.Concrete
 
         }
 
-        public void Delete(Tracking cargoT)
+        public void Delete(int cargoId)
         {
 
-            Tracking cargoToDelete = _cargos.SingleOrDefault(c => c.CargoId == cargoT.CargoId);
+            Tracking cargoToDelete = _cargos.SingleOrDefault(c => c.CargoId == cargoId);
             _cargos.Remove(cargoToDelete);
         }
 

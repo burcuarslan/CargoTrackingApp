@@ -38,9 +38,13 @@ namespace CargoTrackingApp
             {
                 MessageBox.Show(cargo.CargoStatus);
             }
-            InMemoryCargoTracking ınMemory = new InMemoryCargoTracking();
+            InMemoryCargoTracking inMemory = new InMemoryCargoTracking();
 
-            MessageBox.Show((ınMemory.b).ToString());
+            foreach (var item in inMemory.jsonParts)
+            {
+                MessageBox.Show(item);
+            }
+            
 
         }
 

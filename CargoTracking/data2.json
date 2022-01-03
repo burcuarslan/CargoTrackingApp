@@ -11,18 +11,7 @@
     "PhoneNumber": "5442276917",
     "Email": "burcuarslln@gmail.com"
   },
-  {
-    "CargoTrackingId": 1,
-    "CargoStatus": "ürün teslim edildi",
-    "CargoId": 2,
-    "SendingAddress": "slkrghşslkjgh",
-    "ReceivingAddress": "slngslkjşhflsk",
-    "UserId": 2,
-    "Name": "emrecan",
-    "LastName": "arslan",
-    "PhoneNumber": "5442276917",
-    "Email": "burcuarslln@gmail.com"
-  },
+
   {
     "CargoTrackingId": 7,
     "CargoStatus": "rhearh",
@@ -58,5 +47,19 @@
     "LastName": "rpaeogjlrg",
     "PhoneNumber": "87965",
     "Email": "gerger"
+  },
+  {
+    "CargoTrackingId": 9889,
+    "CargoStatus": "kayboldu",
+    "CargoId": 0,
+    "SendingAddress": "gaergaer",
+    "ReceivingAddress": "ergerger",
+    "UserId": 6878,
+    "Name": "srgsrg",
+    "LastName": "xfzvxfv",
+    "PhoneNumber": "srgsrg",
+    "Email": "rgarg"
   }
-]
+] 
+ 
+

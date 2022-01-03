@@ -13,7 +13,7 @@ namespace CargoTrackingApp.Business.Abstract
         List<Tracking> GetAll();
         List<Tracking> GetById(int id);
         void Add(Tracking cargoT);
-        void Delete(Tracking cargoT);
+        void Delete(int cargoId);
         void Update(Tracking cargoT);
 
     }

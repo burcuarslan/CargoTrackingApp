@@ -22,9 +22,9 @@ namespace CargoTrackingApp.Business.Concrete
             _cargoDal.Add(cargoT);
         }
 
-        public void Delete(Tracking cargoT)
+        public void Delete(int cargoId)
         {
-            _cargoDal.Delete(cargoT);
+            _cargoDal.Delete(cargoId);
         }
 
         public List<Tracking> GetAll()
