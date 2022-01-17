@@ -10,7 +10,8 @@ using System.Threading.Tasks;
 namespace CargoTrackingApp.Business.Concrete
 {
     public class CargoTrackingManager : ICargoTrackingService
-    {
+    {   
+        
         ICargoTrackingDal _cargoDal;
         public CargoTrackingManager(ICargoTrackingDal cargoDal)
         {
@@ -19,6 +20,7 @@ namespace CargoTrackingApp.Business.Concrete
 
         public void Add(Tracking cargoT)
         {
+            
             _cargoDal.Add(cargoT);
         }
 

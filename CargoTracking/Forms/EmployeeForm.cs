@@ -13,23 +13,34 @@ using System.Windows.Forms;
 
 namespace CargoTracking
 {
-    public partial class Employee : Form
+    public partial class EmployeeForm : Form
     {
-        //CargoTrackingManager _manager;
-        public Employee()
+        //CargoTrackingManager manager;
+        public EmployeeForm()
         {
             InitializeComponent();
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
-           // _manager = new CargoTrackingManager(new InMemoryCargoTracking());
+            //manager = new CargoTrackingManager(new InMemoryCargoTracking());
             (new AddCargo()).Show();
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             (new DeleteCargo()).Show();
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            (new CheckCargo()).Show();
+        }
+
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

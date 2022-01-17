@@ -92,51 +92,79 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Business\Abstract\ICargoTrackingService.cs" />
+    <Compile Include="Business\Abstract\IEmployeeService.cs" />
     <Compile Include="Business\Concrete\CargoTrackingManager.cs" />
-    <Compile Include="Cargo_Tracking1.cs" />
-    <Compile Include="DataAccess\Abstract\ICargoTrackingDal.cs" />
-    <Compile Include="DataAccess\Concrete\InMemoryCargoTracking.cs" />
-    <Compile Include="DeleteCargo.cs">
+    <Compile Include="Business\Concrete\EmployeeManager.cs" />
+    <Compile Include="Forms\CargoUpdate.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="DeleteCargo.Designer.cs">
+    <Compile Include="Forms\CargoUpdate.Designer.cs">
+      <DependentUpon>CargoUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\CheckCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\CheckCargo.Designer.cs">
+      <DependentUpon>CheckCargo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataAccess\Abstract\ICargoTrackingDal.cs" />
+    <Compile Include="DataAccess\Abstract\IEmployeeDal.cs" />
+    <Compile Include="DataAccess\Concrete\CargoTrackingDal.cs" />
+    <Compile Include="DataAccess\Concrete\EmployeeDal.cs" />
+    <Compile Include="Forms\DeleteCargo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DeleteCargo.Designer.cs">
       <DependentUpon>DeleteCargo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Entity\Concrete\Cargo.cs" />
     <Compile Include="Entity\Concrete\Tracking.cs" />
-    <Compile Include="Entity\Concrete\Customer.cs" />
-    <Compile Include="Entity\Concrete\User.cs" />
-    <Compile Include="Cargo_Tracking.cs">
+    <Compile Include="Entity\Concrete\Employee.cs" />
+    <Compile Include="Forms\Cargo_Tracking.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Cargo_Tracking.Designer.cs">
+    <Compile Include="Forms\Cargo_Tracking.Designer.cs">
       <DependentUpon>Cargo_Tracking.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddCargo.cs">
+    <Compile Include="Forms\AddCargo.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="AddCargo.Designer.cs">
+    <Compile Include="Forms\AddCargo.Designer.cs">
       <DependentUpon>AddCargo.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee.cs">
+    <Compile Include="Forms\EmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Employee.Designer.cs">
-      <DependentUpon>Employee.cs</DependentUpon>
+    <Compile Include="Forms\EmployeeForm.Designer.cs">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Cargo_Tracking.resx">
+    <EmbeddedResource Include="Forms\CargoUpdate.resx">
+      <DependentUpon>CargoUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Cargo_Tracking.resx">
       <DependentUpon>Cargo_Tracking.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="AddCargo.resx">
+    <EmbeddedResource Include="Forms\AddCargo.resx">
       <DependentUpon>AddCargo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="DeleteCargo.resx">
+    <EmbeddedResource Include="Forms\CheckCargo.resx">
+      <DependentUpon>CheckCargo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DeleteCargo.resx">
       <DependentUpon>DeleteCargo.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Employee.resx">
-      <DependentUpon>Employee.cs</DependentUpon>
+    <EmbeddedResource Include="Forms\EmployeeForm.resx">
+      <DependentUpon>EmployeeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -147,7 +175,6 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <None Include="jsonData.json" />
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

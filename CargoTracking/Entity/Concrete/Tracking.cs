@@ -6,18 +6,41 @@ using System.Threading.Tasks;
 
 namespace CargoTrackingApp.Entity.Concrete
 {
-    public class Tracking:Cargo
+    public class Tracking
     {
+        public string SenderName { get; set; }
+        public string SenderSurName { get; set; }
+        public string SenderPhoneNumber { get; set; }
+        public string SenderEmail { get; set; }
+        public string SenderAddress { get; set; }
+        public string ReceiverName { get; set; }
+        public string ReceiverSurname { get; set; }
+        public string ReceiverAddress { get; set; }
+        public string ReceiverPhoneNumber { get; set; }
         public int CargoTrackingId { get; set; }
-        public String CargoStatus { get; set; }
+        public string CargoStatus { get; set; }
+        public int CargoWeight { get; set; }
+        public int CargoCost { get; set; }
         public Tracking()
         {
 
         }
-        public Tracking(int UserId,String Name,String LastName,String PhoneNumber,String Email,int CargoId,String SendingAddress, String ReceivingAddress, int CargoTrackingId,string CargoStatus): base(UserId, Name, LastName, PhoneNumber,Email,CargoId,SendingAddress,ReceivingAddress)
+        public Tracking(string SenderName, string SenderSurname, string SenderPhoneNumber, string SenderEmail, string SenderAddress, string ReceiverName, string ReceiverSurname, string ReceiverAddress, string ReceiverPhoneNumber, int CargoTrackingId, string CargoStatus, int CargoWeight, int CargoCost)
         {
+            this.SenderName = SenderName;
+            this.SenderSurName = SenderSurname;
+            this.SenderPhoneNumber = SenderPhoneNumber;
+            this.SenderEmail = SenderEmail;
+            this.SenderAddress = SenderAddress;
+            this.ReceiverName = ReceiverName;
+            this.ReceiverSurname = ReceiverSurname;
+            this.ReceiverAddress = ReceiverAddress;
+            this.ReceiverPhoneNumber = ReceiverPhoneNumber;
             this.CargoTrackingId = CargoTrackingId;
             this.CargoStatus = CargoStatus;
+            this.CargoWeight = CargoWeight;
+            this.CargoCost = CargoCost;
+
         }
     }
 }

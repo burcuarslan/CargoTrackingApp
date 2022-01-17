@@ -1,6 +1,7 @@
 ﻿using CargoTrackingApp.Business.Abstract;
 using CargoTrackingApp.Business.Concrete;
 using CargoTrackingApp.DataAccess.Abstract;
+using CargoTrackingApp.DataAccess.Concrete;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -11,17 +12,12 @@ namespace CargoTrackingApp
 {
     static class Program
     {
-        /// <summary>
-        /// Uygulamanın ana girdi noktası.
-        /// </summary>
         [STAThread]
-        static void Main()
+        public static void Main()
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
             Application.Run(new Form1());
-            
-            
            
         }
     }

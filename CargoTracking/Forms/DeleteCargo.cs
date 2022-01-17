@@ -22,8 +22,22 @@ namespace CargoTracking
 
         private void button1_Click(object sender, EventArgs e)
         {
-            _manager = new CargoTrackingManager(new InMemoryCargoTracking());
-            _manager.Delete(Convert.ToInt32(textBox1.Text));
+            if (textBox1.Text==null)
+            {
+                MessageBox.Show("lütfen tüm alanları doldurun!");
+            }
+            else
+            {
+                _manager = new CargoTrackingManager(new CargoTrackingDal());
+                _manager.Delete(Convert.ToInt32(textBox1.Text));
+                MessageBox.Show("Başarıyla Silindi");
+            }
+            
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            this.Close();
         }
     }
 }

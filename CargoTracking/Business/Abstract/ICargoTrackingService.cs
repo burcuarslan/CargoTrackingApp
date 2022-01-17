@@ -15,6 +15,7 @@ namespace CargoTrackingApp.Business.Abstract
         void Add(Tracking cargoT);
         void Delete(int cargoId);
         void Update(Tracking cargoT);
+       
 
     }
 }
