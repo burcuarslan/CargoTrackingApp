@@ -49,9 +49,9 @@ namespace CargoTracking
 
         private void button2_Click(object sender, EventArgs e)
         {
-            if (SenderName.Text == null && SenderSurname.Text == null && SenderPhoneNumber.Text == null && SenderEmail.Text == null && SenderAddress.Text == null && ReceiverName.Text == null && ReceiverSurname.Text == null && ReceiverPhoneNumber.Text == null && ReceiverAddress.Text == null && CargoTrackingId.Text == null && CargoStatus.Text == null && CargoWeight.Text == null && CargoCost.Text == null)
+            if (SenderName.Text == "" && SenderSurname.Text == "" && SenderPhoneNumber.Text == "" && SenderEmail.Text == "" && SenderAddress.Text == "" && ReceiverName.Text == "" && ReceiverSurname.Text == "" && ReceiverPhoneNumber.Text == "" && ReceiverAddress.Text == "" && CargoTrackingId.Text == "" && CargoStatus.Text == "" && CargoWeight.Text == "" && CargoCost.Text == "")
             {
-                MessageBox.Show("lütfen tüm alanları doldurun!");
+                MessageBox.Show("Lütfen tüm alanları doldurun!");
             }
             else
             {

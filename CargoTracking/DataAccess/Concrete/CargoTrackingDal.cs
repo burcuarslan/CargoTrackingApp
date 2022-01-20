@@ -8,17 +8,18 @@ using System.Threading.Tasks;
 using System.IO;
 using System.Text.RegularExpressions;
 using System.Collections.Generic;
-
+using System.Windows.Forms;
 
 namespace CargoTrackingApp.DataAccess.Concrete
 {
     public class CargoTrackingDal : ICargoTrackingDal
     {
         List<Tracking> _cargos;
+        string dir = Application.StartupPath;
         public CargoTrackingDal()
         {
             _cargos = new List<Tracking>();
-            var c = File.ReadAllText(@"C:\CargoTracking-main\CargoTracking-main\CargoTracking\Tracking.json");
+            var c = File.ReadAllText(dir + "/JsonFiles/Tracking.json");
             var objectList = JsonConvert.DeserializeObject<List<Tracking>>(c);
             foreach (var obj in objectList)
             {
@@ -32,7 +33,7 @@ namespace CargoTrackingApp.DataAccess.Concrete
             _cargos.Add(cargoT);
 
             string json = JsonConvert.SerializeObject(_cargos.ToArray());
-            File.WriteAllText(@"C:\CargoTracking-main\CargoTracking-main\CargoTracking\Tracking.json", json);
+            File.WriteAllText(dir + "/JsonFiles/Tracking.json", json);
 
         }
 
@@ -42,7 +43,7 @@ namespace CargoTrackingApp.DataAccess.Concrete
             Tracking cargoToDelete = _cargos.SingleOrDefault(c => c.CargoTrackingId == cargoId);
             _cargos.Remove(cargoToDelete);
             string json = JsonConvert.SerializeObject(_cargos.ToArray());
-            File.WriteAllText(@"C:\CargoTracking-main\CargoTracking-main\CargoTracking\Tracking.json", json);
+            File.WriteAllText(dir + "/JsonFiles/Tracking.json", json);
         }
 
 
@@ -88,7 +89,7 @@ namespace CargoTrackingApp.DataAccess.Concrete
             cargoUpdate.CargoWeight=cargoT.CargoWeight;
             cargoUpdate.CargoCost=cargoT.CargoCost;
             string json = JsonConvert.SerializeObject(_cargos.ToArray());
-            File.WriteAllText(@"C:\CargoTracking-main\CargoTracking-main\CargoTracking\Tracking.json", json);
+            File.WriteAllText(dir + "/JsonFiles/Tracking.json", json);
         }
     }
 }

@@ -28,22 +28,30 @@ namespace CargoTrackingApp
 
         private void button1_Click(object sender, EventArgs e)
         {
-            manager = new CargoTrackingManager(new CargoTrackingDal());
-            int _id = Convert.ToInt32(textBox1.Text);
             
-            if (manager.GetById(_id)==null)
+            if (textBox1.Text=="")
             {
-                MessageBox.Show("Takip numarası yanlış");
+                MessageBox.Show("Lütfen tüm alanları doldurun!");
             }
             else
             {
-                foreach (var cargo in manager.GetById(_id))
+                manager = new CargoTrackingManager(new CargoTrackingDal());
+                int _id = Convert.ToInt32(textBox1.Text);
+                if (manager.GetById(_id) == null)
                 {
-                    MessageBox.Show("Gönderen: " + cargo.SenderName + " " + cargo.SenderSurName + '\n' + "Gönderen Adres: "
-                        + cargo.SenderAddress + '\n' + "Alıcı: " + cargo.ReceiverName + " " + cargo.ReceiverSurname + '\n' + "Alıcı Adres: "
-                        + cargo.ReceiverAddress + '\n' + "Cargo Durum: " + cargo.CargoStatus);
+                    MessageBox.Show("Takip numarası yanlış");
+                }
+                else
+                {
+                    foreach (var cargo in manager.GetById(_id))
+                    {
+                        MessageBox.Show("Gönderen: " + cargo.SenderName + " " + cargo.SenderSurName + '\n' + "Gönderen Adres: "
+                            + cargo.SenderAddress + '\n' + "Alıcı: " + cargo.ReceiverName + " " + cargo.ReceiverSurname + '\n' + "Alıcı Adres: "
+                            + cargo.ReceiverAddress + '\n' + "Cargo Durum: " + cargo.CargoStatus);
+                    }
                 }
             }
+            
             
         }
 

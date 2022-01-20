@@ -23,9 +23,9 @@ namespace CargoTracking
 
         private void button1_Click(object sender, EventArgs e)
         {
-            if (textBox1.Text==null&&textBox2.Text==null)
+            if (textBox1.Text==""&&textBox2.Text=="")
             {
-                MessageBox.Show("lütfen tüm alanları doldurun!");
+                MessageBox.Show("Lütfen tüm alanları doldurun!");
             }
             else
             {
@@ -47,6 +47,13 @@ namespace CargoTracking
         private void button2_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+            
+            textBox1.Text = "admin";
+            textBox2.Text = "admin";
         }
     }
 }
